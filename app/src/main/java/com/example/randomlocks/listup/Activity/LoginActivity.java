@@ -1,4 +1,4 @@
-package com.example.randomlocks.listup;
+package com.example.randomlocks.listup.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 
 import com.example.randomlocks.listup.Helper.SharedPreferenceHelper;
+import com.example.randomlocks.listup.R;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
