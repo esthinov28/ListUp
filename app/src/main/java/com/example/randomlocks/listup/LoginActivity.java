@@ -55,18 +55,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.login :
 
-                boolean shouldContinue = true;
+                boolean shouldContinue = false;
                 String email = mEmail.getText().toString();
                 String password = mPassword.getText().toString();
                 String storedEmail = SharedPreferenceHelper.getFromSharedPreferences(SharedPreferenceHelper.EMAIL, null, this);
                 String storedPassword = SharedPreferenceHelper.getFromSharedPreferences(SharedPreferenceHelper.PASSWORD,null,this);
 
-                if((storedEmail!=null && !storedEmail.equals(email))||(storedPassword!=null && !storedPassword.equals(password))){
-                    shouldContinue = false;
+
+
+                if((storedEmail!=null && storedEmail.equals(email))&&(storedPassword!=null && storedPassword.equals(password))){
+
+                    shouldContinue = true;
+                }else {
                     mEmailLayout.setErrorEnabled(true);
                     mPasswordLayout.setErrorEnabled(true);
                     mPasswordLayout.setError("Enter a correct email & password");
-
                 }
 
                 if(shouldContinue){

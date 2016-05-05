@@ -34,7 +34,13 @@
     </style>
 
 
+    <style name="Card_Title" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textSize">24dp</item>
+    </style>
 
+    <style name="CARD_Description" parent="TextAppearance.AppCompat.Light.SearchResult.Subtitle">
+
+    </style>
 
 
 
