@@ -27,4 +27,14 @@
     <string name="email">Email</string>
     <string name="sign_up">Sign up Now</string>
     <string name="sign_in">Already have an account? Sign in</string>
+
+
+    <string-array name="Todo_Type">
+        <item>School</item>
+        <item>Work</item>
+        <item>Shopping</item>
+        <item>Meeting</item>
+        <item>Project</item>
+        <item>Others</item>
+    </string-array>
 </resources>
