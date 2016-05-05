@@ -8,6 +8,15 @@
     <color name="fab">#03A9F4</color>
     <color name="toolbartext">#3F51B5</color>
     <color name="background">#E8EAF6</color>
+    <color name="color1">#FF4081</color>
+    <color name="color2">#80DEEA</color>
+    <color name="color3">#80CBC4</color>
+    <color name="color4" >#E6EE9C</color>
+    <color name="color5">#FFCC80</color>
+    <color name="color6">#81D4FA</color>
+    <color name="color7">#F48FB1</color>
+    <color name="color8">#CE93D8</color>
+    <color name="color9">#9FA8DA</color>
 
 </resources>
 
