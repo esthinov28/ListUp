@@ -8,24 +8,24 @@
     android:background="@drawable/bg">
 
 
-   <android.support.design.widget.TextInputLayout
-       android:id="@+id/email_hint"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="28dp"
-       app:errorTextAppearance="@style/ErrorText">
-
-
-
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/email"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/login_email"
-        android:inputType="textEmailAddress"
-        style="@style/LoginTextStyle" />
+        android:layout_marginTop="28dp"
+        app:errorTextAppearance="@style/ErrorText">
 
-   </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress"
+            style="@style/LoginTextStyle" />
+
+    </android.support.design.widget.TextInputLayout>
 
 
     <android.support.design.widget.TextInputLayout
