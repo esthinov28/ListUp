@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    grid:rowCount="3"
+    grid:columnCount="3">
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color1"
+        grid:layout_rowWeight="1"
+        grid:backgroundTint="@color/color1"
+        grid:layout_row="0"
+        grid:layout_column="0" />
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color2"
+        grid:backgroundTint="@color/color2"
+
+        grid:layout_rowWeight="1"
+
+        grid:layout_row="0"
+        grid:layout_column="1" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color3"
+        grid:backgroundTint="@color/color3"
+
+        grid:layout_rowWeight="1"
+
+        grid:layout_row="0"
+        grid:layout_column="2" />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color4"
+        grid:backgroundTint="@color/color4"
+
+        grid:layout_rowWeight="1"
+        grid:layout_row="1"
+        grid:layout_column="0" />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color5"
+        grid:backgroundTint="@color/color5"
+        grid:layout_rowWeight="1"
+        grid:layout_row="1"
+        grid:layout_column="1" />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color6"
+        grid:backgroundTint="@color/color6"
+        grid:layout_rowWeight="1"
+        grid:layout_row="1"
+        grid:layout_column="2" />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color7"
+        grid:backgroundTint="@color/color7"
+        grid:layout_rowWeight="1"
+        grid:layout_row="2"
+        grid:layout_column="0"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color8"
+        grid:backgroundTint="@color/color8"
+        grid:layout_rowWeight="1"
+        grid:layout_row="2"
+        grid:layout_column="1"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/fabStyle"
+        android:id="@+id/color9"
+        grid:backgroundTint="@color/color9"
+        grid:layout_rowWeight="1"
+        grid:layout_row="2"
+        grid:layout_column="2"
+        />
+
+
+
+
+
+</android.support.v7.widget.GridLayout>
+
+
+

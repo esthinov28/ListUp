@@ -1,0 +1,157 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.randomlocks.listup.Fragments.AddTodoList">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/large_padding"
+            android:layout_marginBottom="@dimen/medium_padding"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/toolbartext"
+                style="@style/Base.TextAppearance.AppCompat" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                >
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter title"
+                    />
+
+            </ScrollView>
+            <TextView
+                android:id="@+id/project"
+                android:paddingTop="@dimen/medium_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo type"
+                android:textColor="@color/toolbartext"
+                style="@style/Base.TextAppearance.AppCompat"
+                />
+
+            <TextView
+                android:id="@+id/project_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="School"
+                style="@style/TextAppearance.AppCompat.Title"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+</android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_padding"
+                    />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/extra_very_small_padding"
+                        android:layout_marginStart="@dimen/extra_very_small_padding"
+                        android:enabled="false"
+                        android:checked="false"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/new_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="New item"
+                        android:fontFamily="italic"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        app:backgroundTint="@color/toolbartext"
+        app:layout_anchor="@+id/toolbar"
+        app:layout_anchorGravity="bottom|right|end"
+        style="@style/fabStyle"
+        android:layout_gravity="end|center_vertical" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

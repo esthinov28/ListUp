@@ -1,0 +1,27 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="@dimen/image_width"
+        android:gravity="start"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_view_list_white_24dp"
+        />
+
+
+
+
+    <CheckBox
+        android:id="@+id/checked_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:text="Todo Item"/>
+
+
+
+</LinearLayout>
